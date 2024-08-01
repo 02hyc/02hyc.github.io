@@ -12,7 +12,7 @@ title                    : "Yanchen Huang / Site Title"
 title_separator          : "-"
 name                     : &name "Yanchen Huang"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://02hyc.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "life-photo-cut.jpg"
   name             : "Yanchen Huang | 黄琰琛"
   pronouns         : "he/him"  
   bio              : "Junior at Software Institute, Nanjing University"
