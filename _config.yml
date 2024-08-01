@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "life-photo-cut.jpg"
+  avatar           : "profile.png"
   name             : "Yanchen Huang | 黄琰琛"
   pronouns         : "he/him"  
   bio              : "Junior at Software Institute, Nanjing University"
