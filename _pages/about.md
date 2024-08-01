@@ -7,9 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm Huang Yanchen, now a junior at Software Institute, Nanjing University, and I expect to go to Westlake University in 2025. Now I'm researching on Evolutionary Development. Besides, I'm interested in Natural Language Processing and Large Language Models.
+Hi there! I'm Huang Yanchen, now a junior at Software Institute, Nanjing University. I expect to go to Westlake University in 2025. Now I'm researching on Evolutionary Development in Westlake University with [Prof. Yaochu Jin](https://en.westlake.edu.cn/faculty/yaochu-jin.html). Besides, I'm interested in Natural Language Processing and Large Language Models, especially for the agents' self-evolution.
+
+
 
 Education Experience
 ======
 {% include education.html %}
 
+Academic Experience
+======
+{% include academic.html %}
