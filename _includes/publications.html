@@ -1,93 +1,93 @@
 <style>
-/* 主要容器，使用 Flexbox 布局 */
-.publication {
-  display: flex;
-  gap: 1.5rem; /* 使用 gap 属性来创建列间距，更现代 */
-  margin-bottom: 2.5rem;
-  /* 移除了 align-items: flex-start，让子元素默认拉伸到同样高度 */
-}
-
-/* 图片容器 */
-.publication-image {
-  flex: 0 0 250px; /* 固定图片容器宽度 */
-}
-
-/* 核心改动在这里：让图片本身填满其容器 */
-.publication-image img {
-  width: 100%;
-  height: 100%; /* 让图片高度填满父容器的高度 */
-  object-fit: cover; /* 关键属性：图片会保持其宽高比，同时填满整个空间。可能会裁剪掉图片的一部分，但不会拉伸变形。*/
-  border: 1px solid #e1e4e8;
-  border-radius: 4px;
-}
-
-/* 文字细节容器 */
-.publication-details {
-  flex: 1; /* 占据剩余的所有空间 */
-  display: flex; /* 将其也设置为flex容器 */
-  flex-direction: column; /* 让内部元素垂直排列 */
-}
-
-.publication-title {
-  font-size: 1.4rem;
-  margin: 0 0 0.5rem 0;
-  font-weight: bold;
-}
-
-.publication-authors {
-  margin-bottom: 0.75rem;
-  font-style: italic;
-  color: #586069;
-}
-
-.publication-links {
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.publication-links a {
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.publication-venue {
-  margin-bottom: 1rem;
-}
-
-.publication-venue .conference {
-  font-weight: bold;
-}
-
-.publication-venue .presentation-type {
-  color: #cb2431;
-  font-weight: bold;
-}
-
-/* 让描述部分占据所有剩余的垂直空间 */
-.publication-description {
-  color: #24292e;
-  line-height: 1.5;
-  flex-grow: 1; /* 这会让描述区域填满，确保整个右侧容器被撑开 */
-}
-
-/* 响应式设计（保持不变） */
-@media (max-width: 768px) {
-  .publication {
-    flex-direction: column;
-  }
-  .publication-image {
-    margin-right: 0;
-    margin-bottom: 1rem;
-    flex-basis: auto;
-    width: 100%;
-  }
-  .publication-image img {
-    height: auto; /* 在移动端恢复图片的自动高度 */
-  }
-}
-</style>
+    /* 主要容器，使用 Flexbox 布局 */
+    .publication {
+      font-size: 0.9rem; /* 新增：将组件的基础字体大小设为默认的90%，整体缩小文字 */
+      display: flex;
+      gap: 1.2rem; /* 缩小：减小图片和文字之间的间距 */
+      margin-bottom: 2rem; /* 缩小：减小每个出版物条目下方的间距 */
+    }
+    
+    /* 图片容器 */
+    .publication-image {
+      flex: 0 0 220px; /* 缩小：固定图片容器宽度 */
+    }
+    
+    /* 核心改动在这里：让图片本身填满其容器 */
+    .publication-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid #e1e4e8;
+      border-radius: 4px;
+    }
+    
+    /* 文字细节容器 */
+    .publication-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .publication-title {
+      font-size: 1.25em; /* 调整：相对于新的基础字体大小进行调整 (0.9rem * 1.25) */
+      margin: 0 0 0.4em 0; /* 缩小：使用 em 单位，间距会随字体大小缩放 */
+      font-weight: bold;
+    }
+    
+    .publication-authors {
+      margin-bottom: 0.6em; /* 缩小 */
+      font-style: italic;
+      color: #586069;
+    }
+    
+    .publication-links {
+      margin-bottom: 0.6em; /* 缩小 */
+      display: flex;
+      align-items: center;
+      gap: 8px; /* 缩小 */
+    }
+    
+    .publication-links a {
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .publication-venue {
+      margin-bottom: 0.8em; /* 缩小 */
+    }
+    
+    .publication-venue .conference {
+      font-weight: bold;
+    }
+    
+    .publication-venue .presentation-type {
+      color: #cb2431;
+      font-weight: bold;
+    }
+    
+    .publication-description {
+      color: #24292e;
+      line-height: 1.45; /* 微调行高以适应更小的字体 */
+      flex-grow: 1;
+    }
+    
+    /* 响应式设计（保持不变） */
+    @media (max-width: 768px) {
+      .publication {
+        flex-direction: column;
+        font-size: 1rem; /* 在移动端恢复默认字体大小，避免过小 */
+      }
+      .publication-image {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        flex-basis: auto;
+        width: 100%;
+      }
+      .publication-image img {
+        height: auto;
+      }
+    }
+    </style>
 
 <div class="publication">
     <div class="publication-image">
