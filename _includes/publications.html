@@ -1,0 +1,119 @@
+<style>
+/* 主要容器，使用 Flexbox 布局 */
+.publication {
+  display: flex;
+  gap: 1.5rem; /* 使用 gap 属性来创建列间距，更现代 */
+  margin-bottom: 2.5rem;
+  /* 移除了 align-items: flex-start，让子元素默认拉伸到同样高度 */
+}
+
+/* 图片容器 */
+.publication-image {
+  flex: 0 0 250px; /* 固定图片容器宽度 */
+}
+
+/* 核心改动在这里：让图片本身填满其容器 */
+.publication-image img {
+  width: 100%;
+  height: 100%; /* 让图片高度填满父容器的高度 */
+  object-fit: cover; /* 关键属性：图片会保持其宽高比，同时填满整个空间。可能会裁剪掉图片的一部分，但不会拉伸变形。*/
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+}
+
+/* 文字细节容器 */
+.publication-details {
+  flex: 1; /* 占据剩余的所有空间 */
+  display: flex; /* 将其也设置为flex容器 */
+  flex-direction: column; /* 让内部元素垂直排列 */
+}
+
+.publication-title {
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: bold;
+}
+
+.publication-authors {
+  margin-bottom: 0.75rem;
+  font-style: italic;
+  color: #586069;
+}
+
+.publication-links {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.publication-links a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.publication-venue {
+  margin-bottom: 1rem;
+}
+
+.publication-venue .conference {
+  font-weight: bold;
+}
+
+.publication-venue .presentation-type {
+  color: #cb2431;
+  font-weight: bold;
+}
+
+/* 让描述部分占据所有剩余的垂直空间 */
+.publication-description {
+  color: #24292e;
+  line-height: 1.5;
+  flex-grow: 1; /* 这会让描述区域填满，确保整个右侧容器被撑开 */
+}
+
+/* 响应式设计（保持不变） */
+@media (max-width: 768px) {
+  .publication {
+    flex-direction: column;
+  }
+  .publication-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    flex-basis: auto;
+    width: 100%;
+  }
+  .publication-image img {
+    height: auto; /* 在移动端恢复图片的自动高度 */
+  }
+}
+</style>
+
+<div class="publication">
+    <div class="publication-image">
+      {% if include.image_path %}
+        <img src="{{ include.image_path | relative_url }}" alt="publication image">
+      {% endif %}
+    </div>
+    <div class="publication-details">
+      <h3 class="publication-title">{{ include.title }}</h3>
+      <div class="publication-authors">
+        {{ include.authors }}
+      </div>
+      <div class="publication-links">
+        {% if include.website_url %}<a href="{{ include.website_url }}" target="_blank" rel="noopener noreferrer">Website</a>  {% endif %}
+        {% if include.paper_url %}<a href="{{ include.paper_url }}" target="_blank" rel="noopener noreferrer">Paper</a>  {% endif %}
+        {% if include.data_url %}<a href="{{ include.data_url }}" target="_blank" rel="noopener noreferrer">Data</a>  {% endif %}
+        {% if include.code_url %}<a href="{{ include.code_url }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
+        {% if include.github_repo %}
+          <a class="github-button" href="https://github.com/{{ include.github_repo }}" data-size="large" data-show-count="true" aria-label="Star {{ include.github_repo }} on GitHub">Star</a>
+        {% endif %}
+      </div>
+      <div class="publication-venue">
+        <span class="conference">{{ include.conference }}</span> <span class="presentation-type">{{ include.presentation_type }}</span>
+      </div>
+      <div class="publication-description">
+        {{ include.description }}
+      </div>
+    </div>
+  </div>

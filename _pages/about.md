@@ -7,9 +7,20 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I'm Huang Yanchen, now a junior at Software Institute, Nanjing University. I expect to go to Westlake University in 2025. Now I'm researching on Evolutionary Development in Westlake University with [Prof. Yaochu Jin](https://en.westlake.edu.cn/faculty/yaochu-jin.html). Besides, I'm interested in Natural Language Processing and Large Language Models, especially for the agents' self-evolution.
+Hi there! I'm Huang Yanchen. I obtained my Bachelor of Engineering degree in Software Engineering from Nanjing University. I am pursuing a Ph.D. in Computer Science at Westlake University & Zhejiang University. I am working on Spiking Neural Networks. Feel free to contact me!
 
+Publications
+=====
 
+{% include publications.html
+  image_path="../images/SpiLiFormer.png"
+  title="SpiLiFormer: Enhancing Spiking Transformers with Lateral Inhibition"
+  authors="Zeqi Zheng*, Yanchen Huang*, Yingchao Yu, Zizheng Zhu, Junfeng Tang, Zhaofei Yu, Yaochu Jin"
+  paper_url="https://arxiv.org/pdf/2503.15986"
+  conference="ICCV 2025"
+%}
+
+<!-- {{ site.data.publications }} -->
 
 Education Experience
 ======

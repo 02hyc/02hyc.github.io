@@ -1,0 +1,12 @@
+publications:
+  - title: "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows"
+    authors: "Fangyu Lei, Jixuan Chen, Yuxiao Ye, Ruisheng Cao, Dongchan Shin, Hongjin Su, Zhaoqing Suo, Hongcheng Gao, Wenjing Hu, Pengcheng Yin, Victor Zhong, Ruoxi Sun, Qian Liu, Sida Wang, Tao Yu"
+    image: "../images/SpiLiFormer.png"
+    website: "https://spider2.github.io "
+    paper: "https://arxiv.org/pdf/123456789.pdf "
+    data: "https://github.com/spider2/data "
+    code: "https://github.com/spider2/code "
+    stars: 514
+    conference: "ICLR'25"
+    presentation: "Oral Presentation"
+    abstract: "Spider 2.0 is an evaluation framework comprising 627 real-world text-to-SQL workflow problems derived from enterprise-level database use cases."
