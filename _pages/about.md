@@ -17,7 +17,9 @@ Publications
   title="SpiLiFormer: Enhancing Spiking Transformers with Lateral Inhibition"
   authors="Zeqi Zheng*, Yanchen Huang*, Yingchao Yu, Zizheng Zhu, Junfeng Tang, Zhaofei Yu, Yaochu Jin"
   paper_url="https://arxiv.org/pdf/2503.15986"
+  code_url="https://github.com/KirinZheng/SpiLiFormer"
   conference="ICCV 2025"
+  presentation_type="Poster"
 %}
 
 <!-- {{ site.data.publications }} -->
