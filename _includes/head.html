@@ -14,6 +14,10 @@
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | escape }}">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+{% assign stylesheet_version = site.github.build_revision %}
+{% unless stylesheet_version %}
+  {% assign stylesheet_version = site.time | date: '%s' %}
+{% endunless %}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ stylesheet_version }}">
 
 <meta http-equiv="cleartype" content="on">
