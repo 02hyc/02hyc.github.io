@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main id="main" class="site-container home" role="main">
+  <section class="profile-intro" aria-labelledby="profile-name">
+    <div class="profile-intro__copy">
+      <h1 id="profile-name">Yanchen Huang <span lang="zh-CN">黄琰琛</span></h1>
+      <p class="profile-summary">{{ page.intro | escape }}</p>
+      {% include profile-links.html %}
+    </div>
+    <figure class="profile-photo">
+      <a href="{{ '/images/life-photo-cut.jpg' | relative_url }}" aria-label="Open portrait of Yanchen Huang">
+        <img src="{{ '/images/life-photo-cut.jpg' | relative_url }}" alt="Portrait of Yanchen Huang" width="1161" height="1050" fetchpriority="high">
+      </a>
+    </figure>
+  </section>
+
+  <div class="home-content">
+    {{ content }}
+  </div>
+</main>

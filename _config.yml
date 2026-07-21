@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Yanchen Huang / Site Title"
+title                    : "Yanchen Huang"
 title_separator          : "-"
 name                     : &name "Yanchen Huang"
-description              : &description "personal description"
+description              : &description "Yanchen Huang is a Ph.D. student in Computer Science."
 url                      : https://02hyc.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "02hyc/02hyc.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,9 +24,9 @@ author:
   avatar           : "life-photo-cut.jpg"
   name             : "Yanchen Huang | 黄琰琛"
   pronouns         : "he/him"  
-  bio              : "Junior at Software Institute, Nanjing University"
+  bio              : "Ph.D. student in Computer Science"
   location         : "Hangzhou, China"
-  employer         : "Nanjing University"
+  employer         : "Westlake University & Zhejiang University"
   uri              : # URL
   email            : "yanchenhuang@smail.nju.edu.cn" 
 
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : "yukino13167"
   lastfm           : "hycFrom02"
-  linkedin         : # Username
+  linkedin         : "yanchen-huang-370334355"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

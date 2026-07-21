@@ -1,33 +1,26 @@
-<!-- _includes/education.html -->
-<style>
-    .education {
-      display: flex;
-      flex-direction: column;
-    }
-    .education-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .education-item img {
-      margin-right: 20px;
-    }
-    .education-item h4 {
-      margin: 0;
-    }
-    .education-item p {
-      margin: 0;
-    }
-  </style>
-  
-  <div class="education">
-    <div class="education-item">
-      <img src="{{ '../images/NJU.png' }}" alt="Nanjing University" style="height: 50px;">
-      <div>
-        <p>Nanjing University</p>
-        <p><h4>2021 ~ 2025</h4></p>
-        <p><h4>BE in Software Engineering</h4></p>
+<div class="experience-list">
+  <article class="experience-item">
+    <div class="experience-logo">
+      <img src="{{ '/images/WLU.png' | relative_url }}" alt="Westlake University logo" width="473" height="474" loading="lazy">
+    </div>
+    <div class="experience-copy">
+      <h3>Westlake University &amp; Zhejiang University</h3>
+      <div class="experience-role-grid">
+        <p class="experience-role">Ph.D. in Computer Science</p>
+        <p class="experience-date">Sep 2025–present</p>
       </div>
     </div>
-  </div>
-  
+  </article>
+  <article class="experience-item">
+    <div class="experience-logo">
+      <img src="{{ '/images/NJU.png' | relative_url }}" alt="Nanjing University logo" width="160" height="191" loading="lazy">
+    </div>
+    <div class="experience-copy">
+      <h3>Nanjing University</h3>
+      <div class="experience-role-grid">
+        <p class="experience-role">B.E. in Software Engineering</p>
+        <p class="experience-date">Sep 2021–Jun 2025</p>
+      </div>
+    </div>
+  </article>
+</div>

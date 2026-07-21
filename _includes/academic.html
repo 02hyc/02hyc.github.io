@@ -1,40 +1,43 @@
-<!-- _includes/education.html -->
-<style>
-    .education {
-      display: flex;
-      flex-direction: column;
-    }
-    .education-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .education-item img {
-      margin-right: 20px;
-    }
-    .education-item h4 {
-      margin: 0;
-    }
-    .education-item p {
-      margin: 0;
-    }
-  </style>
-  
-  <div class="education">
-    <div class="education-item">
-      <img src="{{ '../images/WLU.png' }}" alt="Westlake University" style="height: 40px;">
-      <div>
-        <p>Westlake University</p>
-        <p><h4><strong>Visiting Student</strong> 2024.7 - present</h4></p>
-        <p><h4>Advisor: Prof. Yaochu Jin</h4></p>
+<div class="experience-list">
+  <article class="experience-item">
+    <div class="experience-logo experience-logo--analemma">
+      <a href="https://analemma.ai/" aria-label="Visit the Analemma AI website">
+        <img src="{{ '/images/analemma-logo.png' | relative_url }}" alt="Analemma AI logo" width="1528" height="1063" loading="lazy">
+      </a>
+    </div>
+    <div class="experience-copy">
+      <h3><a href="https://analemma.ai/">Analemma AI</a></h3>
+      <div class="experience-role-grid">
+        <p class="experience-role">Research Intern</p>
+        <p class="experience-date">Dec 2025–Jun 2026</p>
       </div>
     </div>
-    <div class="education-item">
-        <img src="{{ '../images/NJU.png' }}" alt="Nanjing University" style="height: 50px;">
-        <div>
-          <p>Nanjing University NLP Lab</p>
-          <p><h4><strong>Research Intern</strong> 2024.1 - 2024.8</h4></p>
-          <p><h4><strong>Summer Camp</strong> 2023.6 - 2023.8</h4></p>
-        </div>
+  </article>
+  <article class="experience-item">
+    <div class="experience-logo">
+      <img src="{{ '/images/WLU.png' | relative_url }}" alt="Westlake University logo" width="473" height="474" loading="lazy">
+    </div>
+    <div class="experience-copy">
+      <h3>Westlake University</h3>
+      <div class="experience-role-grid">
+        <p class="experience-role">Visiting Student</p>
+        <p class="experience-date">Jul 2024–Aug 2025</p>
       </div>
-  </div>
+      <p class="experience-meta">Advisor: Prof. Yaochu Jin</p>
+    </div>
+  </article>
+  <article class="experience-item">
+    <div class="experience-logo">
+      <img src="{{ '/images/NJU.png' | relative_url }}" alt="Nanjing University logo" width="160" height="191" loading="lazy">
+    </div>
+    <div class="experience-copy">
+      <h3>Nanjing University NLP Lab</h3>
+      <div class="experience-role-grid">
+        <p class="experience-role">Research Intern</p>
+        <p class="experience-date">Jan–Aug 2024</p>
+        <p class="experience-role">Summer Camp</p>
+        <p class="experience-date">Jun–Aug 2023</p>
+      </div>
+    </div>
+  </article>
+</div>
