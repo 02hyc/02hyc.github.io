@@ -21,7 +21,7 @@ repository               : "02hyc/02hyc.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "life-photo-cut.jpg"
+  avatar           : "undergraduate.jpg"
   name             : "Yanchen Huang | 黄琰琛"
   pronouns         : "he/him"  
   bio              : "Ph.D. student in Computer Science"
