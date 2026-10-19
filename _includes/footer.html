@@ -6,8 +6,6 @@
     <a href="https://github.com/{{ site.author.github }}">GitHub</a>
     <span aria-hidden="true">/</span>
     <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a>
-    <span aria-hidden="true">/</span>
-    <a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>
     {% if site.atom_feed.hide != true %}
       <span aria-hidden="true">/</span>
       <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path | relative_url }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}">RSS</a>
