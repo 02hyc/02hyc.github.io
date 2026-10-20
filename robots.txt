@@ -1,0 +1,2 @@
+Sitemap: https://02hyc.github.io/sitemap.xml
+Sitemap: https://02hyc.github.io/Blog/sitemap.xml
