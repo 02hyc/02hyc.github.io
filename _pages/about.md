@@ -24,6 +24,14 @@ redirect_from:
 %}
 </section>
 
+<section id="writing" class="home-section" aria-labelledby="writing-heading">
+  <h2 id="writing-heading">Writing</h2>
+  <article>
+    <h3><a href="https://02hyc.github.io/Blog/posts/ideaeval/">IdeaEval: Impact-Oriented Evaluation of Scientific Hypothesis Generation</a></h3>
+    <p class="research-statement">Lessons from evaluating AI-generated research ideas: scientific impact, citation-based calibration, and the limits of LLM judges.</p>
+  </article>
+</section>
+
 <section id="education" class="home-section">
   <h2>Education</h2>
   {% include education.html %}
