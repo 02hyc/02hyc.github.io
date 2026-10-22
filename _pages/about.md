@@ -26,9 +26,14 @@ redirect_from:
 
 <section id="writing" class="home-section" aria-labelledby="writing-heading">
   <h2 id="writing-heading">Writing</h2>
-  <article>
-    <h3><a href="https://02hyc.github.io/Blog/posts/ideaeval/">IdeaEval: Impact-Oriented Evaluation of Scientific Hypothesis Generation</a></h3>
-    <p class="research-statement">Lessons from evaluating AI-generated research ideas: scientific impact, citation-based calibration, and the limits of LLM judges.</p>
+  <article class="publication">
+    <a class="publication-image" href="https://02hyc.github.io/Blog/posts/ideaeval/" aria-label="Read IdeaEval: Impact-Oriented Evaluation of Scientific Hypothesis Generation">
+      <img src="{{ '/images/ideaeval-ranker.svg' | relative_url }}" alt="IdeaEval evaluator: a literature review feeds two proposal analyses, followed by a pairwise judge." width="280" height="210" loading="lazy">
+    </a>
+    <div class="publication-details">
+      <h3 class="publication-title"><a href="https://02hyc.github.io/Blog/posts/ideaeval/">IdeaEval: Impact-Oriented Evaluation of Scientific Hypothesis Generation</a></h3>
+      <p class="publication-description">Lessons from evaluating AI-generated research ideas: scientific impact, citation-based calibration, and the limits of LLM judges.</p>
+    </div>
   </article>
 </section>
 

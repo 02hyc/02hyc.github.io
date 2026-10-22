@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="210" viewBox="0 0 280 210" role="img" aria-labelledby="title desc">
+  <title id="title">IdeaEval pairwise evaluator</title>
+  <desc id="desc">A shared literature review informs separate analyses of proposals A and B. A judge compares the two reports.</desc>
+  <!-- Compact homepage adaptation of the article's 07-ranker.svg. -->
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1l4 2.5L1 6" fill="none" stroke="#969c92" stroke-width="1.2"/>
+    </marker>
+  </defs>
+  <style>
+    text{font-family:"Avenir Next","Helvetica Neue",Arial,sans-serif;fill:#292d26;text-anchor:middle}
+    .label{font-size:13px;font-weight:500}
+    .small{font-size:10px;fill:#72796d}
+    .flow{fill:none;stroke:#aab0a4;stroke-width:1.5;marker-end:url(#arrow)}
+    .box{fill:#fbfaf5;stroke:#62695d;stroke-width:1.2}
+  </style>
+  <text x="140" y="15" class="small" letter-spacing="1.5">PAIRWISE EVALUATION</text>
+  <rect class="box" x="66" y="27" width="148" height="33" rx="6"/>
+  <text class="label" x="140" y="48">Literature review</text>
+  <path class="flow" d="M105 60v12H69v18"/>
+  <path class="flow" d="M175 60v12h36v18"/>
+  <rect class="box" x="17" y="93" width="104" height="43" rx="6"/>
+  <rect class="box" x="159" y="93" width="104" height="43" rx="6"/>
+  <text class="small" x="69" y="108">PROPOSAL A</text>
+  <text class="small" x="211" y="108">PROPOSAL B</text>
+  <text class="label" x="69" y="126">Analysis</text>
+  <text class="label" x="211" y="126">Analysis</text>
+  <path class="flow" d="M69 136v14h48v14"/>
+  <path class="flow" d="M211 136v14h-48v14"/>
+  <rect x="98" y="167" width="84" height="29" rx="6" fill="#f8eee8" stroke="#b94228" stroke-width="1.4"/>
+  <text class="label" x="140" y="187" style="fill:#983e2b">Judge</text>
+  <text x="222" y="187" style="font-family:Georgia,serif;font-size:18px;font-style:italic;fill:#983e2b">A ≻ B</text>
+  <path class="flow" d="M182 181h17"/>
+</svg>
