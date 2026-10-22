@@ -767,3 +767,9 @@ strong {
     color: inherit;
   }
 }
+
+/* Give the detailed IdeaEval overview enough room beside the article. */
+@media (min-width: 681px) {
+  .publication.writing-publication { grid-template-columns: 260px minmax(0, 1fr); }
+  .writing-publication .publication-image { width: 260px; }
+}

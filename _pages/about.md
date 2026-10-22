@@ -26,9 +26,9 @@ redirect_from:
 
 <section id="writing" class="home-section" aria-labelledby="writing-heading">
   <h2 id="writing-heading">Writing</h2>
-  <article class="publication">
+  <article class="publication writing-publication">
     <a class="publication-image" href="https://02hyc.github.io/Blog/posts/ideaeval/" aria-label="Read IdeaEval: Impact-Oriented Evaluation of Scientific Hypothesis Generation">
-      <img src="{{ '/images/ideaeval-ranker.svg' | relative_url }}" alt="IdeaEval evaluator: a literature review feeds two proposal analyses, followed by a pairwise judge." width="280" height="210" loading="lazy">
+      <img src="{{ '/images/ideaeval-overview.svg' | relative_url }}" alt="IdeaEval research network showing shared prior literature, human and AI proposals, and pairwise evaluation." width="900" height="362" loading="lazy">
     </a>
     <div class="publication-details">
       <h3 class="publication-title"><a href="https://02hyc.github.io/Blog/posts/ideaeval/">IdeaEval: Impact-Oriented Evaluation of Scientific Hypothesis Generation</a></h3>
